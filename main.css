@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    background:#f4f4f4 ;
+ 
+}
+.container{
+  width: 350px;
+  height: 500px;
+  border-radius: 20px 50px ;  
+  box-shadow: 10px 10px 20px rgb(188, 192, 186) ;
+  background-color:#f9f5f5; 
+  animation: fadeIn 2s ease-in-out;
+  
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;      /* غير مرئية بالبداية */
+    transform: translateY(30px); /* اختياري: يجي من تحت شوي */
+  }
+  100% {
+    opacity: 1;      /* صارت مرئية */
+    transform: translateY(0);     /* رجعت لمكانها الطبيعي */
+  }
+}
+
+.img{
+    background-color: #f9f5f5; /* اختر اللون اللي بتحبه */
+    padding: 10px; /* يعطي مساحة حول الصورة */
+    
+    text-align: center; /* لتوسيط الصورة */
+    border-radius: 20px 50px 0 0;
+}
+
+
+img{
+    width: 150px;
+    height: 200px;
+     display: block;
+     margin: 20px auto 0;
+    
+}
+.hr{
+    border: none;
+    height: 4px;
+    background: linear-gradient(to right, rgb(215, 206, 206), rgb(247, 201, 194), rgb(192, 129, 147));
+    border-radius: 5px;
+    
+}
+h1{
+    color: #b71e3b;
+    padding-top: 20px;
+    text-align: center;
+
+}
+P{
+    padding:20px 10px;
+    text-align: center;
+    font-family: Arial, sans-serif; /* نوع الخط */
+    font-size: 16px;               /* حجم الخط (اختياري) */
+    color: #333;    
+
+}
+a{
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    border-radius: 20px;
+    margin: 10px auto;
+    background-color:#dc143b ;
+    width:fit-content ;
+    padding: 10px 5rem;
+    transition: all 0.3s ease;
+
+}
+a:hover{
+  background-color: #333;
+  color: #fff;
+  transform: calc(1.1);
+  box-shadow: 0 5px 15px rgba(183, 30, 59, 0.5);
+
+}
